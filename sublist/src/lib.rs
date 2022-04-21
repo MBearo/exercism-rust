@@ -5,7 +5,7 @@ pub enum Comparison {
     Superlist,
     Unequal,
 }
-
+// hhahaha
 pub fn sublist<T: PartialEq>(a: &[T], b: &[T]) -> Comparison {
     fn find_window<T: PartialEq>(a: &[T], b: &[T]) -> bool {
         a.is_empty() || b.windows(a.len()).any(|v| a == v)
